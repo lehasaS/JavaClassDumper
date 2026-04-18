@@ -44,21 +44,24 @@ Per run, the tool can:
 
 ## Setup
 ```bash
-# 1) Enter the tool directory
+# 1) Git clone the repository
+git clone https://github.com/lehasaS/JavaClassDumper
+
+# 2) Enter the tool directory
 cd JavaClassDumper
 
-# 2) (Recommended) create and activate a virtualenv
+# 3) (Recommended) create and activate a virtualenv
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 3) Install dependencies (currently stdlib-only; keeps workflow consistent)
+# 4) Install dependencies (currently stdlib-only; keeps workflow consistent)
 pip install -r requirements.txt
 
-# 4) Install the tool in editable mode (adds `java-class-dumper` CLI entrypoint)
+# 5) Install the tool in editable mode (adds `java-class-dumper` CLI entrypoint)
 # `--no-build-isolation` helps in offline/restricted environments.
 pip install -e . --no-build-isolation
 
-# 5) Verify
+# 6) Verify
 java-class-dumper --help
 ```
 
