@@ -108,7 +108,7 @@ When omitted, the default stays neutral (`/`) and does not assume product-specif
 
 Examples:
 - `https://vulnerable.application.com/WEB-INF/classes/` + default class root -> `com/vulnerable/Application.class`
-- `https://vulnerable.application.com/custom/path/` + explicit `--class-root /bea_wls_internal/classes` -> `/bea_wls_internal/classes/com/vulnerable/Application.class`
+- `https://vulnerable.application.com/custom/path/` + explicit `--class-root /java_class_internal/classes` -> `/java_class_internal/classes/com/vulnerable/Application.class`
 
 ## Seeding Sources
 ### 1) Imports from `.java`
