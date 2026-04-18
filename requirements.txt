@@ -1,0 +1,6 @@
+# Python dependencies for java_class_dumper.py
+#
+# This project currently uses only Python standard library modules.
+# External runtime requirements:
+# - Java runtime (`java`) in PATH
+# - CFR jar (e.g., cfr-0.152.jar)

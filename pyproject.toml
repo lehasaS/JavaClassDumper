@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "java-class-dumper"
+version = "0.1.0"
+description = "Generic Java class disclosure recovery pipeline"
+readme = "README"
+requires-python = ">=3.9"
+authors = [
+  { name = "0xHasi" }
+]
+license = { text = "Proprietary" }
+dependencies = []
+keywords = ["security", "reverse-engineering", "java", "decompiler", "source-disclosure"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Environment :: Console",
+  "Intended Audience :: Security Professionals and Enthusiasts",
+  "Topic :: Security",
+]
+
+[project.scripts]
+java-class-dumper = "java_class_dumper:main"
+
+[tool.setuptools]
+py-modules = ["java_class_dumper"]
